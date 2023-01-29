@@ -15,7 +15,7 @@ export default function Catalogue() {
   useEffect(() => {
     const obtenerCatalogue = async () => {
       try {
-        const response = await fetch( `http://upgradeyt.up.railway.app//products?tipo=${filter}` )
+        const response = await fetch( `https://upgradeyt.up.railway.app/products?tipo=${filter}` )
         const products = await response.json()
         setProducts( products )
         setLoadingData( false )
