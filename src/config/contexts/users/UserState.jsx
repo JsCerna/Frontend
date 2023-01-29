@@ -15,7 +15,7 @@ const UserState = ( props ) => {
   const [ globalState, dispatch ] = useReducer( UserReducer, initialState )
   const registerUser = async ( dataForm ) => {
     try {
-      const res = await fetch( 'https://upgradeyt.up.railway.app/auth/signup', { method: 'POST', headers: { "Content-type": 'application/json', "Accept": 'application/json' }, body: JSON.stringify( dataForm ) } )
+      const res = await fetch( 'http://upgradeyt.up.railway.app/auth/signup', { method: 'POST', headers: { "Content-type": 'application/json', "Accept": 'application/json' }, body: JSON.stringify( dataForm ) } )
       const payload = await res.json()
       dispatch( {
         type: "REGISTRO_EXITOSO",
@@ -27,7 +27,7 @@ const UserState = ( props ) => {
   }
   const loginUser = async ( dataForm ) => {
     try {
-      const response = await fetch( 'https://upgradeyt.up.railway.app/auth/login', {
+      const response = await fetch( 'http://upgradeyt.up.railway.app/auth/login', {
         method: 'POST',
         headers: {
           "Content-type": "application/json",
@@ -51,7 +51,7 @@ const UserState = ( props ) => {
       return null
     }
     try {
-      const fetchResponse = await fetch( "https://upgradeyt.up.railway.app/auth/profile", {
+      const fetchResponse = await fetch( "http://upgradeyt.up.railway.app/auth/profile", {
         method: 'GET', headers: {
           "Authorization": `Bearer ${ token }`,
           "Content-type": "application/json",

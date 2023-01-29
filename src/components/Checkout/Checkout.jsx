@@ -35,7 +35,7 @@ const Checkout = () => {
   useEffect( () => {
     const getPreferenceId = async () => {
       const token = localStorage.getItem( 'token' )
-      const fetchResponse = await fetch( 'https://upgradeyt.up.railway.app/orders', {
+      const fetchResponse = await fetch( 'http://upgradeyt.up.railway.app/orders', {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${ token }`,
@@ -62,7 +62,7 @@ const Checkout = () => {
       // con el preferenceId en mano, inyectamos el script de mercadoPago
       const script = document.createElement( 'script' );
       script.type = 'text/javascript';
-      script.src = 'https://sdk.mercadopago.com/js/v2';
+      script.src = 'http://sdk.mercadopago.com/js/v2';
       script.addEventListener( 'load', () => addCheckout( preferenceId ) ); // Cuando cargue el script, se ejecutará la función addCheckout
       document.body.appendChild( script );
     }
