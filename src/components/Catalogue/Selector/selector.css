@@ -1,0 +1,26 @@
+.lask {
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.cadaprod {
+    margin: 5px;
+    float: left;
+    
+}
+.cadaprod img {
+    height: 220px;
+}
+@media screen and (max-width: 915px){
+    .lask {
+        display: grid;
+        background-image: url('https://images.wallpaperscraft.com/image/single/white_background_dents_bumps_texture_69592_1920x1200.jpg');
+    }
+  }
+  
+  @media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
+  }

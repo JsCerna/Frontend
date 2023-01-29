@@ -1,0 +1,38 @@
+#carrusel-container {
+    max-width: 50%;
+  }
+.homy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-image: url('https://images.wallpaperscraft.com/image/single/white_background_dents_bumps_texture_69592_1920x1200.jpg');
+}
+
+@media screen and (max-width: 1080px){
+  #carrusel-container {
+    max-width: 100%;
+  }
+  .homy h1 {
+    font-size: x-large;
+    margin-bottom: 5px;
+  }
+  .homy h2 {
+    font-size: large;
+    padding:5px;
+    margin-bottom: 30px;
+  }
+  .logo {
+    height: 100px;
+    margin: 1em;
+  }
+
+}
+
+@media screen and (max-width: 1850px){
+  html * {margin: 0; padding: 0;}
+}

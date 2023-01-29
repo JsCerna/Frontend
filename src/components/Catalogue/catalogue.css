@@ -1,0 +1,10 @@
+.list-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.full {
+    background-image: url('https://images.wallpaperscraft.com/image/single/white_background_dents_bumps_texture_69592_1920x1200.jpg');
+}

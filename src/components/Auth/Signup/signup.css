@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+.formu h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.formu form {
+  width: 350px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+.formu form label {
+  width: 95px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.formu form input[type="text"],
+form input[type="password"] {
+  width: 200px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formu form button[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+
+.formu form button[type="submit"]:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1080px){
+  .formu {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1850px){
+  html * {margin: 0; padding: 0;}
+}

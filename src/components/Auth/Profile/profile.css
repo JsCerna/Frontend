@@ -1,0 +1,8 @@
+.prof {
+    display: grid;
+    justify-content: center;
+}
+.bot {
+    margin: 7px;
+    color:black
+}   
