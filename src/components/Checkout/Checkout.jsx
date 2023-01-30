@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import ShoppingCartContext from '../../config/contexts/shopping-cart/ShoppingCartContext';
+import '../Checkout/checkout.css'
 
 function addCheckout( preferenceId ) {
   const mp = new window.MercadoPago( 'TEST-6e579f83-f426-4cd4-993d-20014a42decc', {
@@ -73,7 +74,7 @@ const Checkout = () => {
         {
           products?.length === 0 ? 'No hay productos'
             : (
-              <Table striped bordered hover>
+              <Table className='table'>
                 <thead>
                   <tr>
                     <th>#</th>
