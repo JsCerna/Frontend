@@ -28,7 +28,6 @@ const Signup = () => {
 
   async function handleSubmit( event ) {
     event.preventDefault()
-    console.log( formValues )
     registerUser( formValues )
   }
 

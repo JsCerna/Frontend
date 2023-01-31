@@ -28,7 +28,6 @@ const Login = () => {
     </> )
   async function handleSubmit( event ) {
     event.preventDefault()
-    console.log( `🚀 ~ event`, formValues );
     loginUser( formValues )
 
   }
